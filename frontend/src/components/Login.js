@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     const response = await apiService.login({ email, password });
     if (response.status === 200) {
-      navigate('/loggedin');
+      navigate('/loggedin'); // Redirige a la página "LOGUEADO"
     } else {
       alert('Invalid credentials');
     }

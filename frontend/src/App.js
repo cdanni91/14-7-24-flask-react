@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import Info from './components/Info';
+import LoggedIn from './components/LoggedIn'; // Importa el componente
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/loggedin" element={<LoggedIn />} /> {/* Define la ruta */}
       </Routes>
     </div>
   );
