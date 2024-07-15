@@ -3,10 +3,17 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import apiService from '../../services/apiService';
 
+
 const LoginForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register,
+         handleSubmit,
+         formState: { errors } } = useForm();
+  
+  // Hook de react-router-dom que te permite navegar
   const navigate = useNavigate();
 
+
+  
   const onSubmit = async (data) => {
     const response = await apiService.login(data);
     if (response.status === 200) {
