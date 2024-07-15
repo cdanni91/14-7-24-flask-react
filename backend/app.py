@@ -11,6 +11,7 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
+### Bastante básico, revisar el metodo set_password y validate_password
 
 
 @app.route('/register', methods=['POST'])
