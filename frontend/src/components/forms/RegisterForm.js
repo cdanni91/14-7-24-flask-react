@@ -31,8 +31,10 @@ const RegisterForm = () => {
 // Renderizado
 
   return (
+
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2>Register</h2>
+
       <input
         type="email"
         placeholder="Email"
@@ -42,6 +44,7 @@ const RegisterForm = () => {
         })}
       />
       {errors.email && <span>{errors.email.message}</span>}
+
       <input
         type="password"
         placeholder="Password"
@@ -54,6 +57,7 @@ const RegisterForm = () => {
         })}
       />
       {errors.password && <span>{errors.password.message}</span>}
+      
       <button type="submit">Register</button>
     </form>
   );
