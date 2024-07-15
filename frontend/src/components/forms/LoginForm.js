@@ -3,6 +3,9 @@ import { useForm } from 'react-hook-form'; // Importa el hook useForm de react-h
 import { useNavigate } from 'react-router-dom'; // Importa el hook useNavigate de react-router-dom
 import apiService from '../../services/apiService'; // Importa el servicio API personalizado
 
+
+
+// Login form es un componente funcional. En React, los componentes funcionales son funciones de JavaScript que retornan JSX. (Un componente funcional toma props como argumento (aunque en este caso no se utilizan props).)
 const LoginForm = () => {
   // Desestructura los métodos y propiedades necesarios de useForm - Esto es de react-hook-forms
   const { register, handleSubmit, formState: { errors } } = useForm();
