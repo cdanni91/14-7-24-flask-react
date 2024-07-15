@@ -4,12 +4,14 @@ import { useNavigate } from 'react-router-dom'; // Importa el hook useNavigate d
 import apiService from '../../services/apiService'; // Importa el servicio API personalizado
 
 const LoginForm = () => {
-  // Desestructura los métodos y propiedades necesarios de useForm
+  // Desestructura los métodos y propiedades necesarios de useForm - Esto es de react-hook-forms
   const { register, handleSubmit, formState: { errors } } = useForm();
   
-  // useNavigate es un hook de react-router-dom que te permite navegar a diferentes rutas
+  // useNavigate es un hook de react-router-dom que te permite navegar a diferentes rutas - Esto es de react-router-dom
   const navigate = useNavigate();
 
+  // Aca arranca el código en sí
+  
   // Función que se ejecuta al enviar el formulario
   const onSubmit = async (data) => {
     // Llama a la función login del servicio API con los datos del formulario
