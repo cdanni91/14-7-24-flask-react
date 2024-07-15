@@ -26,7 +26,7 @@ const LoginForm = () => {
   };
 
   return (
-    // El componente form llama a handleSubmit al enviarse, que a su vez llama a onSubmit
+    // El componente form llama a handleSubmit (react-hook-forms) al enviarse, que a su vez llama a onSubmit (funcion que definimos previaemnte nosotros)
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2>Login</h2>
       {/* Campo de entrada para el email con validación */}
